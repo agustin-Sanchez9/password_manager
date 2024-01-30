@@ -2,16 +2,14 @@ import random
 import string
 
 wordsSelected = ["Please","Love","Home","Friend","School","Time","Serius","Palace","Action","Sleep","Dream",
-"Dance","Read","Listen","Write","Taste","Touch","Green","White","Orange","Happy","Angry","Purple",
-"Brave","Scared","Honest","Strong","Clean","Heavy","Cold","Simple","Closed","Smart","Lazy","Dumb","Wise",
-"Polite","Rude","Humble","Modest","Nervous","Bored","Creative","Patient","Sincere","Tasty","Unique",
-"Alert","Fake","Explore","Ignore","Blame","Consume","Conform","Resist","Damage","Repel","Dispose",
-"Include","Generate","Future"]
+"Dance","Read","Listen","Write","Taste","Touch","Happy","Angry","Brave","Scared","Honest","Strong","Clean",
+"Heavy","Cold","Simple","Closed","Smart","Lazy","Dumb","Wise","Polite","Rude","Humble","Modest","Nervous",
+"Bored","Creative","Patient","Sincere","Tasty","Unique","Alert","Fake","Explore","Ignore","Blame","Consume",
+"Conform","Resist","Damage","Repel","Dispose","Include","Generate","Future"]
 
 specialsSelected = [".",",","?",")","(","+","-","=","#","%","/"]
 
 # 0 = number, xxx = words, ? = special character
-
 # type 1 = 00xxx00xxx00
 def pwdType_1():
     words = wordsSelected
