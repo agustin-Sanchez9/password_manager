@@ -35,8 +35,7 @@ def pwdType_1():
 
     return pwd1
 
-test1 = pwdType_1()
-print(test1)
+type1 = pwdType_1()
 
 # type 2 = 00xxx00xxx??
 def pwdType_2():
@@ -64,8 +63,7 @@ def pwdType_2():
 
     return pwd2
 
-test2 = pwdType_2()
-print(test2)
+type2 = pwdType_2()
 
 # type 3 = 0000xxx?xxx??
 def pwdType_3():
@@ -95,8 +93,7 @@ def pwdType_3():
 
     return pwd3
     
-test3 = pwdType_3()
-print(test3)
+type3 = pwdType_3()
 
 # type 4 = all random
 def pwdType_4(min_length,number=True,special=True):
@@ -132,7 +129,4 @@ def pwdType_4(min_length,number=True,special=True):
     
     return pwd4
 
-
-test4 = pwdType_4(10)
-print(test4)
-    
+type4 = pwdType_4(10)
