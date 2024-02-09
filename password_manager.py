@@ -19,7 +19,6 @@ while not correctMaster:
     else:
         print("incorrect master, try again")
 
-
 def view():
     with open("password.txt", "r") as f:
         for line in f.readlines():
