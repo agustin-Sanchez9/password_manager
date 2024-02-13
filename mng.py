@@ -35,7 +35,7 @@ with open("master_password.txt" , "r") as masterfile:
 correctMaster = False
 
 while not correctMaster:
-    inputMaster = input("enter the master password: ")
+    inputMaster = input("Enter the master password: ")
     if inputMaster == masterPwd:
         correctMaster = True
     else:
