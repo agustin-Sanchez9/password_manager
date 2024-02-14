@@ -24,7 +24,7 @@ mFer = Fernet(mKey)
 
 
 if not os.path.exists("master_password.txt"):
-    master = input("create your master password: ")
+    master = input("Create your master password: ")
     with open("master_password.txt", "w") as f:
         f.write(mFer.encrypt(master.encode()).decode())
 

@@ -129,4 +129,4 @@ def pwdType_4(min_length,number=True,special=True):
     
     return pwd4
 
-type4 = pwdType_4(10)
+type4 = pwdType_4(15)
