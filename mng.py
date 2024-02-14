@@ -64,60 +64,65 @@ def view():
     with open("password.txt", "r") as f:
         for line in f.readlines():
             data = line.rstrip()
-            account, password = data.split("|")
-            print("Account:", account, "| Password:", fer.decrypt(password.encode()).decode())
+            title, user, password = data.split("|")
+            print("|| Title:",title,"|| User:", user, "|| Password:", fer.decrypt(password.encode()).decode())
 
 def add():
-    name = input("account name: ")
-    pwd = input("password: ")
+    title = input("-> Title: ")
+    name = input("-> User name: ")
+    pwd = input("-> Password: ")
 
     with open("password.txt", "a") as f:
-        f.write(name + "|" + fer.encrypt(pwd.encode()).decode() + "\n")
+        f.write(title + "|" + name + "|" + fer.encrypt(pwd.encode()).decode() + "\n")
 
 def generate(typen):
     if typen == "1":
-        print(type1)
-        use = input("do you want to use the password (y/n): ")
+        print("->    " + type1)
+        use = input("Do you want to use the password (y/n): ")
         if use == "y":
-            name = input("account name: ")
+            title = input("-> Title: ")
+            name = input("-> User name: ")
             with open("password.txt", "a") as f:
-                f.write(name + "|" + fer.encrypt(type1.encode()).decode() + "\n")
+                f.write(title + "|" + name + "|" + fer.encrypt(type1.encode()).decode() + "\n")
     elif typen == "2":
-        print(type2)
-        use = input("do you want to use the password (y/n): ")
+        print("->    " + type2)
+        use = input("Do you want to use the password (y/n): ")
         if use == "y":
-            name = input("name: ")
+            title = input("-> Title: ")
+            name = input("-> User name: ")
             with open("password.txt", "a") as f:
-                f.write(name + "|" + fer.encrypt(type2.encode()).decode() + "\n")
+                f.write(title + "|" + name + "|" + fer.encrypt(type2.encode()).decode() + "\n")
     elif typen == "3":
-        print(type3)
-        use = input("do you want to use the password (y/n): ")
+        print("->    " + type3)
+        use = input("Do you want to use the password (y/n): ")
         if use == "y":
-            name = input("name: ")
+            title = input("-> Title: ")
+            name = input("-> User name: ")
             with open("password.txt", "a") as f:
-                f.write(name + "|" + fer.encrypt(type3.encode()).decode() + "\n")
+                f.write(title + "|" + name + "|" + fer.encrypt(type3.encode()).decode() + "\n")
     elif typen == "4":
-        print(type4)
-        use = input("do you want to use the password (y/n): ")
+        print("->    " + type4)
+        use = input("Do you want to use the password (y/n): ")
         if use == "y":
-            name = input("name: ")
+            title = input("-> Title: ")
+            name = input("-> User name: ")
             with open("password.txt", "a") as f:
-                f.write(name + "|" + fer.encrypt(type4.encode()).decode() + "\n")
+                f.write(title + "|" + name + "|" + fer.encrypt(type4.encode()).decode() + "\n")
 
 def changeMaster():
-    newMaster = input("create your new master password: ")
+    newMaster = input("-> Write the new master password: ")
     with open("master_password.txt", "w") as f:
         f.write(mFer.encrypt(newMaster.encode()).decode())
 
 
 def help():
-    print("0 will represent a two digit number, for example: 12")
-    print("word will represent a word from english, for example: Listen")
-    print("? will represent a special character, for example: ( or =")
-    print("type 1 password: 0word0word0")
-    print("type 2 password: 0word0word??")
-    print("type 3 password: 00word?word??")
-    print("type 4 password: its an all random password using a combination of any ascii symbols")
+    print("-> 0 will represent a two digit number, for example: 12")
+    print("-> word will represent a word from english, for example: Listen")
+    print("-> ? will represent a special character, for example: ( or =")
+    print("-> type 1 password: 0word0word0")
+    print("-> type 2 password: 0word0word??")
+    print("-> type 3 password: 00word?word??")
+    print("-> type 4 password: its an all random password using a combination of any ascii symbols")
 
 
 while True:
@@ -133,7 +138,7 @@ while True:
         add()
     
     elif mode == "g":
-        typen = input("which password type(1, 2, 3 or 4): ")
+        typen = input("-> Choose the password type(1, 2, 3, 4 or any to go back): ")
         generate(typen)
 
     elif mode == "c":
