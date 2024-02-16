@@ -11,13 +11,13 @@ Este es un simple proyecto para probar las funcionalidades principales de crypto
 
 - @echo off
 - "la direccion de python.exe" "la direccion de password_manager.py"
-- @pausa
+- @pause
 
 Por ejemplo, el mío es:
 
 - @echo off
 - "C:\Python311\python.exe" "C:\User\Desktop\repositories\password_manager\password_manager.py"
-- @pausa
+- @pause
 
 3. Guardar el archivo como .bat en la misma carpeta del password_manager.py
 4. Por ultimo simplemente ejecuta el archvo .bat y una ventana de terminal deberia aparecer con el gestor abierto.
