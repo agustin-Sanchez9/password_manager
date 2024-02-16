@@ -9,13 +9,15 @@ Este es un simple proyecto para probar las funcionalidades principales de crypto
 1. Crear un archivo .txt
 2. Escribir el siguiente comando:
 
-    @echo off
-    "la direccion del python.exe instalado en tu pc" "la direccion del password_manager.py en tu pc"
-    @pausa
+- @echo off
+- "la direccion de python.exe" "la direccion de password_manager.py"
+- @pausa
+
 Por ejemplo, el mío es:
-    @echo off
-    "C:\Python311\python.exe" "C:\Users\User\Desktop\repositories\password_manager\password_manager.py"
-    @pausa
+
+- @echo off
+- "C:\Python311\python.exe" "C:\User\Desktop\repositories\password_manager\password_manager.py"
+- @pausa
 
 3. Guardar el archivo como .bat en la misma carpeta del password_manager.py
 4. Por ultimo simplemente ejecuta el archvo .bat y una ventana de terminal deberia aparecer con el gestor abierto.
@@ -34,14 +36,15 @@ This is a simple proyect to test core functionalities of cryptography.fernet and
 1. Create a .txt file
 2. write the following command:
 
-    @echo off
-    "the addres of the python.exe installed in your pc" "the addres of the password_manager.py in your pc"
-    @pause
+- @echo off
+- "the addres of python.exe" "the addres of password_manager.py"
+- @pause
 
 For example, mine is:
-    @echo off
-    "C:\Python311\python.exe" "C:\Users\User\Desktop\repositories\password_manager\password_manager.py"
-    @pause
+
+- @echo off   
+- "C:\Python311\python.exe" "C:\User\Desktop\repositories\password_manager\password_manager.py"
+- @pause
 
 3. save the file as .bat in the same folder of the password_manager.py
 4. Now just open .bat file and a terminal window should appear with the password manager running.
