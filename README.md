@@ -22,6 +22,10 @@ Por ejemplo, el mío es:
 
 Si no logro crear el archivo .bat o recibio algun error al querer ejecutarlo existen multiples tutoriales de como realizar esta tarea, por lo que no debe preocuparse y tan solo que busque alguno de ellos para encontrar solucion a sus problemas.
 
+Por ultimo existe la posibilidad de que cambie los archivos .key existentes para utilizar uasn key generadas propias:
+- Para lograrlo simplemente borre ambos archivos .key y utilizando vscode descomente las funciones writeMasterKey() y writeKey(), luego ejecute el archivo password_manager.py una vez para que estas key se creen. Por ultimo no olvide volver a comentar ambas funciones para evitar que se produzca un error o que se sobreescriban las key generadas.
+- Esto debe realizarse la primera vez que se usa el programa o en su defecto borrando el archivo master_password.txt dado que no podra desencriptar la contraseña al ser borrad el archivo masterKey.key.
+
 ## English
 First of all I emphasize that I do not recommend using this method for password protection, instead there are many options of high quality password managers. Use at your own risk.
 
@@ -43,3 +47,7 @@ For example, mine is:
 4. Now just open .bat file and a terminal window should appear with the password manager running.
 
 If you did not manage to create the .bat file or received an error when trying to execute it, there are multiple tutorials on how to perform this task, so you should not worry and just look for any of them to find a solution to your problems.
+
+Finally there is the possibility to change the existing .key files to use your own generated keys:
+- To achieve this simply delete both .key files and using vscode uncomment the writeMasterKey() and writeKey() functions, then run the password_manager.py file once so that these keys are created. Finally do not forget to comment out both functions again to avoid getting an error or overwriting the generated keys.
+- This must be done the first time you use the program or by deleting the master_password.txt file since you will not be able to decrypt the password when the masterKey.key file is deleted.
